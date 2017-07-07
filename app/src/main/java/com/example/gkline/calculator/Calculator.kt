@@ -14,6 +14,8 @@ class Calculator : AppCompatActivity() {
         setContentView(R.layout.activity_calculator)
     }
 
+
+
     fun buNumberEvent(view: View){
         if(isNewOperation){
             editText.setText("")
@@ -110,10 +112,22 @@ class Calculator : AppCompatActivity() {
             }
         }
 
+
         editText.setText(finalNumber.toString())
         isNewOperation = true
     }
 
+    fun buPercent(view: View){
+
+        val number:Double = editText.text.toString().toDouble() /100
+        editText.setText(number.toString())
+        isNewOperation = true
+    }
+
+    fun buClearEvent(view: View) {
+        editText.setText("0")
+        isNewOperation = true
+    }
 }
 
 

@@ -13,11 +13,12 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="130dp"
         android:background="@color/Grey"
         android:gravity="center|right"
         android:text="0"
-        android:textSize="70dp"
+        android:textAlignment="textEnd"
+        android:textSize="40dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -37,8 +38,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/LighGrey"
+                android:onClick="buClearEvent"
                 android:text="@string/ac"
-                android:onClick="buOpEvent"
                 android:textSize="38sp" />
 
             <Button
@@ -59,8 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/LighGrey"
+                android:onClick="buPercent"
                 android:text="@string/Percent"
-                android:onClick="buOpEvent"
                 android:textSize="38sp" />
 
             <Button
@@ -211,8 +212,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="buNumberEvent"
                 android:background="@color/Orange"
+                android:onClick="buOpEvent"
                 android:text="@string/plus"
                 android:textSize="38sp" />
         </TableRow>
